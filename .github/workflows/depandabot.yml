@@ -10,7 +10,7 @@ jobs:
   issue:
       runs-on: ubuntu-latest
       env:
-        GITHUB_TOKEN: ${{8afdec8bf2c4c771131526db0605e1909870cab1}}
+        GITHUB_TOKEN: ${{"8afdec8bf2c4c771131526db0605e1909870cab1"}}
       steps:
         - uses: actions/checkout@v2
           if: github.event.pull_request.user.login  == 'dependabot[bot]'
